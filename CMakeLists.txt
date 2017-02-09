@@ -27,11 +27,9 @@ RETURN()
 ENDIF()
 
 cmake_minimum_required(VERSION 3.1)
-project(cxxopts)
+project(cxxopts VERSION 1.0.0)
 
 enable_testing()
-
-set(VERSION "0.0.1")
 
 option(CXXOPTS_BUILD_EXAMPLES "Set to ON to build examples" ON)
 option(CXXOPTS_BUILD_TESTS "Set to ON to build tests" OFF)
