@@ -47,13 +47,9 @@ if(CXXOPTS_USE_UNICODE_HELP)
 endif()
 
 add_library(cxxopts INTERFACE)
-target_sources(
-  cxxopts INTERFACE
-  ${CMAKE_CURRENT_SOURCE_DIR}/include/cxxopts.hpp
-  )
 target_include_directories(
   cxxopts INTERFACE
-  include/
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/include>
   )
 target_link_libraries(
   cxxopts
