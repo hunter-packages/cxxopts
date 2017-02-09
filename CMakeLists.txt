@@ -35,7 +35,7 @@ option(CXXOPTS_BUILD_EXAMPLES "Set to ON to build examples" ON)
 option(CXXOPTS_BUILD_TESTS "Set to ON to build tests" OFF)
 
 set(CXXOPTS_LINKER_LIBRARIES "")
-set(CXXOPTS_USE_UNICODE_HELP FALSE CACHE BOOL "Use ICU Unicode library")
+option(CXXOPTS_USE_UNICODE_HELP "Use ICU Unicode library" OFF)
 if(CXXOPTS_USE_UNICODE_HELP)
 
   find_package(PkgConfig)
